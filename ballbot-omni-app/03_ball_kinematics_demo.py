@@ -223,13 +223,11 @@ def compute_motor_torques(Tx, Ty, Tz):
     # ---------------------------------------------------------
     # LAB 8
     # YOUR CODE GOES HERE
-    #T1 = 1/3(Tz - (2 * Ty/np.cos(45)))
-    #T2 = 1/3(Tz + 1/np.cos(45) * (-1 * (np.sqrt(3)) * Tx + Ty))
-    #T3 = 1/3(Tz + 1/np.cos(45) * (np.sqrt(3) * Tx + Ty))
+    T1 = 1/3*(Tz - (2 * Ty/np.cos(45)))
+    T2 = 1/3*(Tz + 1/np.cos(45) * (-1 * (np.sqrt(3)) * Tx + Ty))
+    T3 = 1/3*(Tz + 1/np.cos(45) * (np.sqrt(3) * Tx + Ty))
 
-    T1 = 0 
-    T2 = 0
-    T3 = 0
+
     # ---------------------------------------------------------
 
     return T1, T2, T3
