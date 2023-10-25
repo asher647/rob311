@@ -336,7 +336,7 @@ if __name__ == "__main__":
         # Compute motor torques (T1, T2, and T3) with Tx, Ty, and Tz
         # Beginning with ball rolling toward positive y-axis
         # CHANGE THESE TO ADJUST THE ROLLING DIRECTION OF YOUR BALL-BOT
-        Tx = 2
+        Tx = -2
         Ty = 0
         Tz = 0
 
